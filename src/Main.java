@@ -11,7 +11,7 @@ public class Main {
 		System.out.println("Enter something that you want to encrypt");
 		String input = keyboard.nextLine();
 		
-		SecretKey Symmetrickey = KeyGeneration.generateAESKey();
+		SecretKey Symmetrickey = KeyGeneration.generateKey();
 	    byte[] initializationVector = KeyGeneration.createInitializationVector();
 
 	    byte[] cipherText = EncrpytionMethods.do_CIPHEREncryption(input,Symmetrickey,initializationVector);

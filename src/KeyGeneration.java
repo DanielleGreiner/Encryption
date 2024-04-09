@@ -8,7 +8,7 @@ public class KeyGeneration {
 	
 		
 
-		public static SecretKey generateAESKey()throws Exception{
+		public static SecretKey generateKey()throws Exception{
 			SecureRandom securerandom = new SecureRandom();
 			KeyGenerator keygenerator = KeyGenerator.getInstance(Secret.CIPHER);
 
